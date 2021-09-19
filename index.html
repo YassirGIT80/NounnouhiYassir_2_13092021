@@ -5,33 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d14213dc34.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 <body>
     <div id="blockpage">
         <header>
             <div id="ligne">
-                <div id="logo">Réservia</div>        
+                <div id="logo"><img src="images/logo/Reservia@3x.png" alt=""></div>        
                 <nav>
                     <ul>
-                    <a href="#article-titre"><li class="b">Hébergements</li></a>
-                    <a href="#act"><li>Activités</li></a>
-                    <a href=""><li id="insc"><strong>S'inscrire </strong></li></a>
+                        <a href="#article-titre"><li class="navchoice"><p>Hébergements</p></li></a>
+                        <a href="#act"><li class="navchoice"><p>Activités</p></li></a>
+                        <a href=""><li id="insc"><strong>S'inscrire </strong></li></a>
                     </ul>
                 </nav>
             </div>
-            <p><strong>Trouvez votre hébergement pour des vacances de rêve</strong> </p>
+            <p id="pstrong"><strong>Trouvez votre hébergement pour des vacances de rêve</strong> </p>
             <p>En plein centre ville ou en pleine nature</p>
 
             <div id="searchbar">
-                <p><img src="Font Awesome/map-marker-alt-solid.svg" alt=""></p>
-                <input type="text" value="Marseille, France">
-                <input type="button" value="Rechercher">
+                <p><i class="fas fa-map-marker-alt"></i></p>
+                <input id="barre" type="text" value="Marseille, France">
+                <input id="btn" type="button" value="Rechercher">
             </div>
 
             <div id="filtres">
                 <p><strong>Filtres</strong></p>
                 <ul>
+                    <i class="fas fa-money-bill-wave"></i>
                     <li>Economique</li>
                     <li>Familial</li>
                     <li>Romantique</li>
