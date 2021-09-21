@@ -153,16 +153,17 @@ header li{
     font-weight: bolder;
     cursor: pointer;
     margin-bottom: 10px;
+    box-shadow: 0px 0px transparent;
+    transition: box-shadow 1s;
     
 }
 
 .icon{
     display: flex;
-    
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    width: 50px;
+    width: 60px;
     height: 50px;
 }
 
@@ -180,6 +181,15 @@ header li{
     border-radius: 100%;
     margin: -3px;
     margin-right: 10px;
+}
+
+.fa-child{
+    width: 50;
+}
+
+#filtres li:hover{
+ box-shadow: 5px 10px #888888;
+
 }
 
 
