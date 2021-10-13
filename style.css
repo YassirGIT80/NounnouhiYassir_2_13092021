@@ -45,23 +45,15 @@ a{
 
 #ligne img{
     height: 40px;
-    width: 160px;
-    margin-left: -35px;
+    width: 100px;
 }
 
 #pstrong{
     font-size: 22px;
 }
 
-.navchoice-mob1:hover{
-    color: #0065FC;
-    border-top: #0065FC solid 4px;
-}
 
-.navchoice-mob2:hover{
-    color: #0065FC;
-    border-top: #0065FC solid 4px;
-}
+
 
 
 
@@ -189,6 +181,7 @@ header nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #filtres i{
@@ -274,7 +267,7 @@ header nav{
     padding: 5px;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
-.card  img{
+.card-img{
     width: 100%;
     height: 120px;
     object-fit: cover;
@@ -308,10 +301,11 @@ color: #0065FC;
         gap: 30px;
     }
 
-#cards2 img{
+.card-pop{
     object-fit: cover;
     border-radius: 20px 0px 0 20px;
     width: 120px;
+    height: 120px;
 }
 
 
@@ -448,14 +442,28 @@ footer div{
     width: 30%;
 }
 
+.card-content2{
+    flex-wrap: wrap;
+}
 
-@media only screen and (min-width:601px) and (max-width: 1300px) {
-    #corps{
-        flex-direction: column-reverse;
-    }
+@media only screen and (min-width:1051px) and (max-width: 1250px) {
     #cards2{
         display: flex;
+        flex-direction: row;
     }
+} 
+@media only screen and (min-width:601px) and (max-width: 1051px) {
+    .card-pop{
+        width: 300px;
+    }
+}    
+@media only screen and (min-width:601px) and (max-width: 1250px) {
+    #corps{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   
+    
     #corps aside{
         width: 100%;
     }
@@ -463,9 +471,31 @@ footer div{
     #corps article{
         width: 100%;
     }
+
+    .navchoice-mob1:hover{
+        color: #0065FC;
+        border-top: #0065FC solid 4px;
+    }
+    
+    .navchoice-mob2:hover{
+        color: #0065FC;
+        border-top: #0065FC solid 4px;
+    }
+    
 }
 
 @media only screen and (max-width: 600px) {
+    #blockpage{
+        margin: 0px;
+    }
+    
+    #barre-info{
+        padding: 0px 30px;
+    }
+    .headerdown{
+        padding: 0px 30px;
+    }
+    
     #filtres{
         flex-direction: column;
         align-items:flex-start;
@@ -511,21 +541,9 @@ footer div{
     .footer-bloc{
         width: 100%;
     }
-    .insc{
-        order: 1;
-    }
-    .nav-menu{
-        order: 2;
-    }
-
-    .nav{
-        order:2;
-    }
     
-    header nav{
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+    
+  
     #btn2{
         display: block;
         height: 38px;
@@ -540,32 +558,38 @@ footer div{
     #btn{
         display: none;
     }
-    /*
-    #ligne{
-        flex-wrap: wrap;
-    }
-        */
-    .nd{
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
-
-    .nav-menu{
-        display: flex;
-        justify-content: space-between;
-    }
-
+   
     .navchoice-mob1:hover{
         color: #0065FC;
-        border-bottom: #0065FC solid 4px;
+        border-bottom: #0065FC solid 3px;
     }
     
     .navchoice-mob2:hover{
         color: #0065FC;
-        border-bottom: #0065FC solid 4px;
+        border-bottom: #0065FC solid 3px;
     }
-    .headerbloc{
+
+    #ligne{
+        display: block;
+    }
+
+    .imglogo{
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navchoice{
+        border-top: none;
+        padding-bottom: 15px ;
+    }
+
+    .nd{
+        border-bottom: 3px #F2F2F2 solid;
+    }
+
+    .nd a {
+        width: 50%;
+        display: flex;
+        justify-content: center
     }
 }
