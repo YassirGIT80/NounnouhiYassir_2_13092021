@@ -1,4 +1,4 @@
-/*Police*/
+    /*Police*/
 @font-face {
     font-family: "relaway";
    
@@ -9,8 +9,9 @@
     font-family: "relaway-italic";
     src: url(polices/Raleway-Italic-VariableFont_wght.ttf);
 }
+    /*Fin Police*/
 
-/* Global */
+    /*Global*/
 
 body{
     font-family: Relaway;
@@ -27,9 +28,9 @@ a{
     color: black;
 }
 
+    /*Fin Global */
 
-/* Header */
-
+    /* Header */
 
 #ligne{
     display: flex;
@@ -80,8 +81,7 @@ header nav{
     border-top: #0065FC solid 4px;
 }
 
-
-/* Barre de recherche */
+    /* Barre de recherche */
 
 #btn2{
     display: none;
@@ -92,16 +92,12 @@ header nav{
     align-items: center;
 }
 
-
-
 .fa-map-marker-alt{
     border: 1px solid transparent;
     background-color: #F2F2F2;
     padding: 10px;
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-
-    
+    border-bottom-left-radius: 10px;    
 }
 
 #barre{
@@ -110,7 +106,6 @@ header nav{
     border-right: none;
     padding-left: 10px;
     font-weight: bolder;
-    
 }
 
 #btn{
@@ -123,10 +118,9 @@ header nav{
     cursor: pointer;
 }
 
+    /* Fin Barre de recherche */
 
-
-
-/* filtres*/ 
+    /* filtres*/ 
 
 *{
     box-sizing: border-box;
@@ -157,7 +151,7 @@ header nav{
     align-items: center;
     height: 50px;
     border: 3px solid #F2F2F2;
-    border-radius: 2rem;
+    border-radius: 32px;
     padding: 0px;
     padding-right: 20px ;
     font-weight: bolder;
@@ -200,20 +194,17 @@ header nav{
 
 #filtres li:hover{
  box-shadow: 5px 5px #888888;
-
 }
 
+    /*Fin Filtres*/
 
-/*section n°1*/
+    /*Fin Header*/
 
-
-
+    /*section n°1*/
 
 #barre-info{
     display: flex;
     align-items: center;
-    
-    
 }
 
 #icon-info{
@@ -224,8 +215,8 @@ header nav{
     border-radius: 100%;
     margin-right: 15px;
     padding: 10px;
-    height: 2rem;
-    width: 2rem;
+    height: 32px;
+    width: 32px;
 }
 
 .fa-info{
@@ -292,7 +283,7 @@ header nav{
 }
 
 h3{
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
     margin: 5px 0px;
 }
@@ -360,60 +351,31 @@ article > p{
     flex: 1;
 }
 
+.fa-star{
+    padding-bottom: 10px;
+}
+    /* fin section n°1*/
 
 
-/*section2*/
+    /*section2*/
 
 #activites{
     display: flex;
     flex-direction: column;
-    /*
-    column-gap: 30px;
-    margin: 40px 0;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 10rem 30px 30px 30px 10rem;
-    */
+  
 }
 
 .act-card{
     display: flex;
+    height: 500px;
     gap: 20px;
 }
 
 .card-coupe{
-    display: flex;
-    flex-direction: column;
     flex: 1;
-    gap: 30px;
-
-}/*
-@media only screen and (min-width: 601px) {
-    .Activites-Card1 {
-        grid-row: 2/7;
-        grid-column: 1/2;
-    }
-    .Activites-Card2 {
-        grid-column: 2/3;
-        grid-row: 2/5;
-    }
-    .Activites-Card3{
-        grid-column: 3/4;
-        grid-row: 2/7;
-    }
-    .Activites-Card4{
-        grid-column: 4/5;
-        grid-row: 2/3;
-    }
-    .Activites-Card5{
-        grid-column: 2/3;
-        grid-row: 6/7;
-    }
-    .Activites-Card6{
-        grid-column: 4/5;
-        grid-row: 4/7;
-    }
-}*/
-
+    height: 500px;
+    
+}
 
 
 .Activites-Card {
@@ -423,14 +385,27 @@ article > p{
     display: flex;
     flex-direction: column;
     flex: 1;
-  }
+}
 
-.Activites-Card-Image{
-    position: relative;
+.coupe{
     flex: 1;
 }
 
+.Activites-Card-Image1{
+    /*
+    position: relative;
+    */
+    
+    height: 450px;
+}
 
+.Activites-Card-Image2{
+    height: 210px;
+}
+
+.Activites-Card-Image3{
+    height: 130px;
+}
 .Image-Activites{
     
     height: 100%;
@@ -438,13 +413,30 @@ article > p{
     object-fit: cover;
 }
 
-#activites h3{
-    margin: 15px 15px; 
+.Activites-Card2{
+    margin-bottom: 60pX;
+    height: 260;
 }
 
-.fa-star{
-    padding-bottom: 10px;
+.Activites-Card3{  
+    height: 240;
 }
+
+.Activites-Card4{
+    margin-top: 60pX;
+    height: 260;
+}
+
+#activites h3{
+    margin: 15px 15px;
+}
+
+.card-entier{
+    flex: 1;
+}
+
+    /*section2*/
+
     /*footer*/
 
 footer{
@@ -481,7 +473,10 @@ footer div{
     width: 30%;
 }
 
+    /*footer*/
 
+
+    /*MediaQueries*/
 
 @media only screen and (min-width:768px) and (max-width: 1250px) {
     #corps{
@@ -501,16 +496,20 @@ footer div{
     }
     #cards1{
         flex-direction: column;
+        flex: 1;
     }
     #cards22{
         flex-direction: column;
+        flex: 1;
+        margin-top: 0;
     }
     .hebergement-cardcontent{
         display:flex;
         justify-content: space-evenly;
+        gap: 20px;
     }
     
-    
+        
 }
 
 @media only screen and (max-width: 768px) {
@@ -562,9 +561,8 @@ footer div{
     }
     #activites{
         padding: 30px;
-        row-gap: 2rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+        row-gap: 32px;
+        height: 1500px;
     }
     .content-footer{
         flex-direction: column;
@@ -638,5 +636,34 @@ footer div{
     .Image-Activites{
         height: 120px;
     }
+
+    .Activites-Card-Image2{
+        height: auto;
+    }
+
+    .Activites-Card-Image1{
+        height: auto;
+    }
+
+    .Activites-Card4{
+        margin-top: 20px;
+    }
+    .Activites-Card2{
+        margin-bottom: 20px;
+    }
+
+    .act-card{
+        height: 1300px;
+    }
+
+    .coupe{
+        flex: 0;
+    }
+
+    .card-entier{
+        flex: 0;
+    }
 }
 
+
+    /* Fin MediaQueries*/
