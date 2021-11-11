@@ -13,6 +13,11 @@
 
     /*Global*/
 
+section a:hover{
+    transform: translate(-2px, -2px)
+} 
+  
+
 body{
     font-family: Relaway;
     margin: auto;
@@ -20,71 +25,68 @@ body{
     
 }
 
-#blockpage{
+header,section{
     margin: 0px 40px;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: black; 
 }
 
+*{
+    box-sizing: border-box;
+}
+
+h2{
+    font-weight: bolder;
+}
     /*Fin Global */
 
     /* Header */
 
-#ligne{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nd{
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#ligne img{
-    height: 40px;
-    width: 100px;
+header img{
+    height: 60px;
+    width: 140px;
 }
 
-#pstrong{
-    font-size: 22px;
-}
-
-
-.navchoice{
-    margin-top: 0px;
-}
-
-header nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    
+strong{
+    font-size:x-large;
 }
 
 .navchoice {
-    padding-right: 25px;
     text-decoration: none;
-    padding: 30px 20px;
+    padding: 30px 40px;
     border-top: solid 4px transparent;
+    font-weight: bold;
 }
 
-.insc{
+.navchoice1{
     color: #0065FC;
+    border-top: #0065FC solid 2px;
 }
 
-.navchoice-mob1{
-    color: #0065FC;
-    border-top: #0065FC solid 4px;
-}
+    /*Fin Header*/
 
     /* Barre de recherche */
 
-#btn2{
+#search > p{
+    padding: 10px 0px;
+}
+
+#search-btn2{
     display: none;
 }
 
@@ -101,7 +103,7 @@ header nav{
     border-bottom-left-radius: 10px;    
 }
 
-#barre{
+#searchtext{
     height: 38px;
     border:#F2F2F2 2px solid;
     border-right: none;
@@ -109,8 +111,9 @@ header nav{
     font-weight: bolder;
 }
 
-#btn{
+#search-btn1{
     height: 38px;
+    padding: 0px 15px;
     border:transparent;
     background-color: #0065FC;
     color: white;
@@ -121,33 +124,23 @@ header nav{
 
     /* Fin Barre de recherche */
 
-    /* filtres*/ 
+    /* Filter*/ 
 
-*{
-    box-sizing: border-box;
-  }
 
-#filtres{
-    list-style: none;
+#filter{
     display: flex;
     align-items: center;
+    margin: 20px 0px 0px 0px;
 }
 
-
-#filtres i{
+#filter ul{
     display: flex;
-    align-items: center;
     justify-content: center;
-    color:  #0065FC ;
-    font-size: 20px;
-    border-radius: 100%;
-    text-align: center;
-    font-weight: bolder;
-    height: 50px;
-    width: 50px;;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-#filtres li{
+#filter li{
     display: flex;
     align-items: center;
     height: 50px;
@@ -161,8 +154,22 @@ header nav{
     margin-right: 20px;
     box-shadow: 0px 0px transparent;
     transition: box-shadow 0.5s;
-    
 }
+
+#filter i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  #0065FC ;
+    font-size: 20px;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: bolder;
+    height: 50px;
+    width: 50px;;
+}
+
+
 
 .icon{
     display: flex;
@@ -173,114 +180,92 @@ header nav{
     height: 50px;
 }
 
-#filtres ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#filtres i{
-    
+#filter i{
     background:#DEEBFF  15px;
     padding: 15px;
-    border-radius: 100%;
-    margin: -3px;
+    margin: -5px;
     margin-right: 10px;
 }
 
-.fa-child{
-    width: 50px;
-}
 
-#filtres li:hover{
+#filter li:hover{
  box-shadow: 5px 5px #888888;
 }
 
-    /*Fin Filtres*/
-
-    /*Fin Header*/
-
-    /*section n°1*/
-
-#barre-info{
+#info-bar{
     display: flex;
     align-items: center;
+    padding-bottom: 30px;
 }
 
-#icon-info{
+#info-icon{
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #F2F2F2;
     border-radius: 100%;
     margin-right: 15px;
-    padding: 10px;
     height: 32px;
     width: 32px;
 }
 
 .fa-info{
     color: #0065FC ;
-    background: transparent;
-    text-align: center;
+    background:transparent;
+    width: auto;
 }
 
+    /*Fin Filter*/
 
-#hebergements #corps{
+    /*Lodging*/
+
+#lodging {
     display: flex;
-    gap: 20px;
-   
+    gap: 20px;  
 }
 
-#corps > * {
+#lodging > * {
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 30px;
 }
 
-#corps article{
+#lodging article{
     width: 70%;
 }
 
-#corps aside{
+#lodging aside{
     width: 30%;
 }
 
-#cards1{
+#cards-firstgroup{
     display: flex;
-    
     gap: 30px;
-    justify-content: space-between;
 }
 
-#cards22{
+#cards-secondgroup{
     display: flex;
-    flex-wrap: wap;
     gap: 30px;
-    justify-content: space-between;
     margin-top: 20px;
 }
 
 .card {
     background-color: #fff;
     border-radius: 20px;
-    overflow: hidden;
     padding: 5px;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
     flex:1;
 }
+
 .card-img{
     width: 100%;
     height: 120px;
     object-fit: cover;
-    
     border-radius: 20px 20px 0 0;
 }
 
 .card-content {
     padding: 0 10px;
-    
 }
 
 h3{
@@ -297,14 +282,13 @@ color: #0065FC;
     color: #ddd;
 }
 
-
-#cards2{
+#pop-cards{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 }
 
-.card-pop{
+.pop-img{
     object-fit: cover;
     border-radius: 20px 0px 0 20px;
     width: 120px;
@@ -318,18 +302,19 @@ section p{
     font-weight: bolder;
 }
 
-#cards2 .card{
+#pop-cards .card{
     display: flex;
 }
 
-#populaires-titre{
+#pop-title{
     display: flex;
     justify-content: space-between;
 }
 
-#cards2 h3{
+#pop-cards h3{
     margin-top: 0px;
 }
+
 
 .card-content2{
     padding-left: 20px;
@@ -337,10 +322,6 @@ section p{
 
 article > p{
     padding-top: 20px;
-}
-
-#barre-info{
-    padding-bottom: 30px;
 }
 
 .card-content2{
@@ -355,15 +336,20 @@ article > p{
 .fa-star{
     padding-bottom: 10px;
 }
-    /* fin section n°1*/
+
+.lodging-cardcontent{
+    padding-bottom: 20px;
+}
+
+    /* Fin lodging*/
 
 
-    /*section2*/
+    /*Acitivity*/
 
-#activites{
+#activity{
     display: flex;
     flex-direction: column;
-  
+    margin-top: 30px;
 }
 
 .act-card{
@@ -371,12 +357,18 @@ article > p{
     gap: 40px;
 }
 
-.card-coupe{
+.semicard{
     flex: 1;
-    height: 500px;
-    
 }
 
+.fullcard{
+    flex: 1;
+}
+
+.activity-grp{
+    display: flex;
+    gap: 40px;
+}
 
 .Activites-Card {
     box-shadow: 0 0 20px #0000002e;
@@ -384,11 +376,6 @@ article > p{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    flex: 1;
-}
-
-.coupe{
-    flex: 1;
 }
 
 .Activites-Card-Image1{    
@@ -407,73 +394,37 @@ article > p{
     height: 170px;
 }
 
-
 .Image-Activites{
-    
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 .Activites-Card2{
-    margin-bottom: 60pX;
-    height: 260;
-}
-
-.Activites-Card3{  
-    height: 240;
+    margin-bottom: 60pX; 
 }
 
 .Activites-Card4{
     margin-top: 60pX;
-    height: 260;
 }
 
-#activites h3{
+#activity h3{
     margin: 15px 15px;
 }
 
-.card-entier{
-    flex: 1;
-}
-
-.pp{
-    display: flex;
-    gap: 40px;
-}
-
-    /*section2*/
+    /*Fin activity*/
 
     /*footer*/
 
 footer{
-    background-color: #F2f2f2;
-}
-
-.content-footer{
     display: flex;
-    margin: 0px 40px;
+    padding: 0px 40px;
     margin-top: 60px;
+    background-color: #F2f2f2;
 }
 
 footer div{
     margin-right: 50px;
-}
-
-#a-propos  {
-    width: 30%;
-}
-
-#nos-hebergements{
-    width: 30%;
-}
-
-#assistance{
-    width: 30%;
-}
-
-.card-content2{
-    flex-wrap: wrap;
 }
 
 .footer-bloc{
@@ -486,40 +437,46 @@ footer div{
     /*MediaQueries*/
 
 @media only screen and (min-width:768px) and (max-width: 1250px) {
-    #corps{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .card-pop{
-        width: 300px;
-    }
-    
-    #corps aside{
+    #lodging aside{
         width: 100%;
     }
 
-    #corps article{
+    #lodging article{
         width: 100%;
     }
-    #cards1{
+    
+    #lodging{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #pop-cards{
+        gap: 20px   ;
+    }
+    .pop-img{
+        width: 300px;
+    }
+    
+    .lodging-cardcontent{
+        display:flex;
+        gap: 20px;
+    }
+
+    #cards-firstgroup{
         flex-direction: column;
         flex: 1;
     }
-    #cards22{
+    #cards-secondgroup{
         flex-direction: column;
         flex: 1;
         margin-top: 0;
     }
-    .hebergement-cardcontent{
-        display:flex;
-        justify-content: space-evenly;
-        gap: 20px;
-    }
-    
+
     .act-card{
         flex-direction: column;
         gap: 40px;
     }
+
     .Activites-Card-Image2{
         height: 170px;
     }
@@ -531,45 +488,38 @@ footer div{
 }
 
 @media only screen and (max-width: 768px) {
-    #blockpage{
+    header, section{
         margin: 0px;
     }
-    #barre{
+    #serchtext{
         width: 100%;
     }
 
-    #barre-info{
-        padding: 0px 30px;
-    }
-    .headerdown{
-        padding: 0px 30px;
+    #search{
+        padding: 30px 30px 0px 30px;
     }
     
-    #filtres{
+    #filter{
         flex-direction: column;
         align-items:flex-start;
     }
    
-    .wrap#filtres ul{
-        flex-wrap: wrap; 
-    }
-
-    #filtres ul{
+    #filter ul{
         flex-wrap: wrap;    
         justify-content: flex-start;
         padding: initial;
     }
     
-    #corps{
+    #lodging{
         flex-direction: column-reverse;
-
     }
 
-    #corps aside{
+    #lodging aside{
         width: 100%;
+        border-radius: 0px;
     }
 
-    #corps article{
+    #lodging article{
         width: 100%;
         background-color: white;
     }
@@ -577,21 +527,19 @@ footer div{
         display: flex;
         flex-direction: column-reverse;
     }
-    #activites{
+    #activity{
         padding: 30px;
         row-gap: 32px;
     }
-    .content-footer{
+    footer{
         flex-direction: column;
-
     }
+
     .footer-bloc{
         width: 100%;
     }
-    
-    
-  
-    #btn2{
+      
+    #search-btn2{
         display: block;
         height: 38px;
         width: 40px;
@@ -602,21 +550,21 @@ footer div{
         cursor: pointer;
     }
 
-    #btn{
+    #search-btn1{
         display: none;
     }
    
-    .navchoice-mob1{
+    .navchoice1{
         color: #0065FC;
         border-bottom: #0065FC solid 3px;
     }
     
-    .navchoice-mob2{
+    .navchoice2{
         
         border-bottom: #F2F2F2 solid 3px;
     }
 
-    #ligne{
+    header{
         display: block;
     }
 
@@ -630,20 +578,23 @@ footer div{
         padding-bottom: 15px ;
     }
 
-  
-
-    .nd a {
+    nav a {
         width: 50%;
         display: flex;
         justify-content: center
     }
 
-    #cards1{
+    #cards-firstgroup{
         flex-direction: column;
     }
 
-    #cards22{
+    #pop-cards{
+        gap: 20px;
+    }
+
+    #cards-secondgroup{
         flex-direction: column;
+        margin-top: 30px;
     }
 
     .act-card{
@@ -671,25 +622,15 @@ footer div{
     }
 
     .Activites-Card4{
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .Activites-Card2{
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
-
-    .coupe{
-        flex: 0;
-    }
-
-    .card-entier{
-        flex: 0;
-    }
-
-    .pp{
+    .activity-grp{
         flex-direction: column;
     }
 }
-
 
     /* Fin MediaQueries*/
